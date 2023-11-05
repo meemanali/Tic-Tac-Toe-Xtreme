@@ -1,0 +1,27 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.TicTacToe" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+
+        <item name="android:statusBarColor">@color/black</item>
+    </style>
+
+    <style name="Theme.TicTacToe" parent="Base.Theme.TicTacToe" />
+
+<!--    we created this and given to buttons in grid layout thus decreases lines of code in xml-->
+<!--    if we set parent="TextAppearance.AppCompat.Button" then text color on buttons will be black. by using below theme, text color is white-->
+    <style name="btnStyle" parent="@style/Widget.Material3.Button.OutlinedButton">
+        <item name="android:height">60dp</item>
+        <item name="android:layout_width">62dp</item>
+        <item name="android:layout_margin">3dp</item>
+        <item name="android:onClick">check</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="roundedImageView">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item>
+    </style>
+
+</resources>

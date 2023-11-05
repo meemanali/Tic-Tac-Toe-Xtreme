@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="24dp"
+    app:cardElevation="30dp"
+    tools:ignore="HardcodedText">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="9dp">
+
+        <TextView
+            android:id="@+id/img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Image"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:layout_marginTop="4dp"
+            app:layout_constraintEnd_toEndOf="@+id/imgp1"
+            app:layout_constraintStart_toStartOf="@+id/imgp1"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            app:layout_constraintBottom_toBottomOf="@+id/img"
+            app:layout_constraintEnd_toEndOf="@+id/edtxtp1"
+            app:layout_constraintStart_toStartOf="@+id/edtxtp1"
+            app:layout_constraintTop_toTopOf="@+id/img" />
+
+        <TextView
+            android:id="@+id/symbol"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Icon"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            app:layout_constraintBottom_toBottomOf="@+id/name"
+            app:layout_constraintEnd_toEndOf="@+id/symbolp1"
+            app:layout_constraintStart_toStartOf="@+id/symbolp1"
+            app:layout_constraintTop_toTopOf="@+id/name" />
+
+        <ImageView
+            android:id="@+id/imgp1"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="18dp"
+            android:contentDescription="imgP1"
+            android:src="@drawable/baseline_tag_faces_24"
+            app:layout_constraintEnd_toEndOf="@+id/img"
+            app:layout_constraintEnd_toStartOf="@+id/edtxtp1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/img" />
+
+        <com.google.android.material.divider.MaterialDivider
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:dividerColor="@color/themeColor"
+            app:layout_constraintBottom_toTopOf="@+id/imgp1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/img"
+            app:layout_constraintVertical_bias="0.5" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/edtxtp1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="8dp"
+            android:gravity="center_horizontal"
+            android:hint="Player 1"
+            android:minWidth="120dp"
+            android:minHeight="48dp"
+            app:layout_constraintBottom_toBottomOf="@+id/imgp1"
+            app:layout_constraintEnd_toStartOf="@+id/symbolp1"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/imgp1"
+            app:layout_constraintTop_toTopOf="@+id/imgp1" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imgp2"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="7dp"
+            android:src="@drawable/baseline_tag_faces_24"
+            app:layout_constraintEnd_toEndOf="@+id/imgp1"
+            app:layout_constraintEnd_toStartOf="@+id/edtxtp2"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imgp1" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/edtxtp2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="8dp"
+            android:gravity="center_horizontal"
+            android:hint="Player 2"
+            android:minWidth="120dp"
+            android:minHeight="48dp"
+            app:layout_constraintBottom_toBottomOf="@+id/imgp2"
+            app:layout_constraintEnd_toStartOf="@+id/symbolp2"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/imgp2"
+            app:layout_constraintTop_toTopOf="@+id/imgp2" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnstart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Start"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edtxtp2"
+            tools:ignore="UsingOnClickInXml" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/symbolp1"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:onClick="symbolP1"
+            android:text="X"
+            app:layout_constraintBottom_toBottomOf="@+id/edtxtp1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/edtxtp1"
+            app:layout_constraintTop_toTopOf="@+id/edtxtp1" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/symbolp2"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:onClick="symbolP2"
+            android:text="O"
+            app:layout_constraintBottom_toBottomOf="@+id/edtxtp2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/edtxtp2"
+            app:layout_constraintTop_toTopOf="@+id/edtxtp2" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

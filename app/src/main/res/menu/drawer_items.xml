@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="HardcodedText">
+
+    <item
+        android:id="@+id/itemStartNewGame"
+        android:icon="@drawable/baseline_videogame_asset_24"
+        android:title="Start New Game" />
+
+    <group
+        android:id="@+id/group"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/itemEnableDarkMode"
+            android:icon="@drawable/baseline_nights_stay_24"
+            android:title="Dark Mode"
+            app:actionViewClass="androidx.appcompat.widget.SwitchCompat" />
+        <item
+            android:id="@+id/itemEnableSound"
+            android:icon="@drawable/baseline_library_music_24"
+            android:title="Sound"
+            app:actionViewClass="androidx.appcompat.widget.SwitchCompat" />
+    </group>
+
+</menu>
