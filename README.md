@@ -3,8 +3,9 @@ Welcome to Tic Tac Toe Xtreme, an exciting and feature-rich take on the classic 
 ## Features
 
 * Engaging animations that bring the game board to life, making every move a visual treat.
-* Celebratory winner animations to make your victories even more satisfying and enjoyable.
 * Utilization of a balloon library for an immersive and interactive user experience.
+* Allows you to pick your character Avatar from your gallery.
+* Celebratory winner animations to make your victories even more satisfying and enjoyable.
 * Immersive sound effects that create an atmospheric and thrilling gameplay environment.
 * Seamless support for a dark theme, ensuring a comfortable and visually appealing gaming experience in low-light conditions.
 * Customizable configurations to tailor the game to your preferences, making it a personalized and enjoyable experience for every player.
@@ -18,8 +19,18 @@ Get started with Tic Tac Toe Xtreme today! Simply download the APK from the 'Rel
 
 ## Screenshots
 
+<div>
+  <img src="https://github.com/meemanali/Tic-Tac-Toe-Xtreme/blob/main/Tic%20Tac%20Toe.png" alt="Tic Tac Toe" width="220" title="Tic Tac Toe">
+  <img src="https://github.com/meemanali/Tic-Tac-Toe-Xtreme/blob/main/Tic%20Tat%20Toe%201.png" alt="Tic Tac Toe 1" width="220" title="Tic Tac Toe 1">
+  <img src="https://github.com/meemanali/Tic-Tac-Toe-Xtreme/blob/main/Tic%20Tat%20Toe%202.png" alt="Tic Tac Toe 2" width="220" title="Tic Tac Toe 2">  
+  <img src="https://github.com/meemanali/Tic-Tac-Toe-Xtreme/blob/main/Tic%20Tat%20Toe%203.png" alt="Tic Tac Toe 3" width="220" title="Tic Tac Toe 3">
+  <img src="https://github.com/meemanali/Tic-Tac-Toe-Xtreme/blob/main/Tic%20Tat%20Toe%204.png" alt="Tic Tac Toe 4" width="220" title="Tic Tac Toe 4">
+</div>
 
 ## Video Preview
+
+https://github.com/meemanali/Tic-Tac-Toe-Xtreme/assets/120294764/8fc4e029-8135-443a-bf5b-021d924bce43
+
 
 
 ## Contributions
