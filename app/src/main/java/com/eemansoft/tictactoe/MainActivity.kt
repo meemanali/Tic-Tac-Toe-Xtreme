@@ -354,17 +354,17 @@ class MainActivity : AppCompatActivity() {
 
     private fun getWinningCombination(): List<List<Button>> {
         return listOf(
-            // Rows
+            // for Rows
             listOf(binding.b1, binding.b2, binding.b3, binding.b4),
             listOf(binding.b5, binding.b6, binding.b7, binding.b8),
             listOf(binding.b9, binding.b10, binding.b11, binding.b12),
             listOf(binding.b13, binding.b14, binding.b15, binding.b16),
-            // Columns
+            // for Columns
             listOf(binding.b1, binding.b5, binding.b9, binding.b13),
             listOf(binding.b2, binding.b6, binding.b10, binding.b14),
             listOf(binding.b3, binding.b7, binding.b11, binding.b15),
             listOf(binding.b4, binding.b8, binding.b12, binding.b16),
-            // Diagonals
+            // for Diagonals
             listOf(binding.b1, binding.b6, binding.b11, binding.b16),
             listOf(binding.b4, binding.b7, binding.b10, binding.b13)
         )
